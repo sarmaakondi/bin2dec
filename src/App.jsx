@@ -1,4 +1,3 @@
-import * as React from "react";
 import Container from "@mui/material/Container";
 import { Box, Typography } from "@mui/material";
 import LogoIcon from "../public/bin2code_xl.png";
