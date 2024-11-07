@@ -42,12 +42,17 @@ export default function App() {
                 justifyContent="space-around"
             >
                 <img src={LogoIcon} alt="logo icon" style={{ width: 100 }} />
-                <Typography variant="h1" align="center">
-                    Bin2Dec
+                <Typography variant="h1">Bin2Dec</Typography>
+            </Box>
+
+            <Box mt={4} textAlign="center">
+                <Typography variant="p">
+                    Enter 'Binary' input and click 'CONVERT' to get the decimal
+                    value
                 </Typography>
             </Box>
 
-            <Box mt={4}>
+            <Box mt={2}>
                 <TextField
                     label="Binary"
                     variant="outlined"
