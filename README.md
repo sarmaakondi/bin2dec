@@ -18,11 +18,17 @@ npm install
 npm run dev
 ```
 
-## Lighthouse Scores
+## Lighthouse Scores for Desktop and Mobile
 
 -   **Performance**: 100/100
 -   **Accessibility**: 100/100
 -   **Best Practices**: 100/100
 -   **SEO**: 100/100
 
-<img src="public/lighthouse_scores.png" alt="Lighthouse Report Screenshot" width="600"/>
+### Lighthouse Report - Desktop
+
+<img src="public/lighthouse_scores_desktop.png" alt="Lighthouse Report Screenshot Desktop" width="600"/>
+
+### Lighthouse Report - Mobile
+
+<img src="public/lighthouse_scores_mobile.png" alt="Lighthouse Report Screenshot Mobile" width="600"/>
