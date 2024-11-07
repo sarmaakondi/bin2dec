@@ -9,14 +9,17 @@ export default function App() {
     const [decimalValue, setDecimalValue] = useState("");
     const [isDecimalDisabled, setDecimalDisabled] = useState(true);
     const [error, setError] = useState("");
+    const maxBinaryLength = 32;
 
     const handleBinaryChange = (e) => {
         const value = e.target.value;
 
-        if (/^[01]*$/.test(value)) {
+        if (/^[01]*$/.test(value) && value.length <= maxBinaryLength) {
             setBinaryValue(value);
             setDecimalValue("");
             setError("");
+        } else if (value.length > maxBinaryLength) {
+            setError("Maximum length of 32 binary digits reached.");
         } else {
             setError("Only binary digits (0 or 1) are allowed.");
             setDecimalValue("");
@@ -41,10 +44,14 @@ export default function App() {
                 mt={4}
                 display="flex"
                 alignItems="center"
-                justifyContent="space-around"
+                justifyContent="center"
             >
-                <img src={LogoIcon} alt="logo icon" style={{ width: 100 }} />
-                <Typography variant="h1">Bin2Dec</Typography>
+                <img
+                    src={LogoIcon}
+                    alt="logo icon"
+                    style={{ width: 56, marginRight: 32 }}
+                />
+                <Typography variant="h2">Bin2Dec</Typography>
             </Box>
 
             <Box mt={4} textAlign="center">
@@ -63,11 +70,15 @@ export default function App() {
                     value={binaryValue}
                     onChange={handleBinaryChange}
                     error={!!error}
-                    helperText={error}
+                    helperText={
+                        error ||
+                        `Digits left: ${maxBinaryLength - binaryValue.length}`
+                    }
                     slotProps={{
-                        input: {
+                        htmlInput: {
                             inputMode: "numeric",
                             pattern: "[0-1]*",
+                            maxLength: maxBinaryLength,
                         },
                     }}
                 />
