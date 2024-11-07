@@ -17,3 +17,12 @@ Install it and run:
 npm install
 npm run dev
 ```
+
+## Lighthouse Scores
+
+-   **Performance**: 100/100
+-   **Accessibility**: 100/100
+-   **Best Practices**: 100/100
+-   **SEO**: 100/100
+
+<img src="public/lighthouse_scores.png" alt="Lighthouse Report Screenshot" width="600"/>
