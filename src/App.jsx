@@ -49,6 +49,7 @@ export default function App() {
                 />
                 <Button
                     sx={{ mt: 2 }}
+                    size="large"
                     variant="contained"
                     color="primary"
                     fullWidth
