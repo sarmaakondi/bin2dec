@@ -1,9 +1,12 @@
 import * as React from "react";
+import { useState } from "react";
 import Container from "@mui/material/Container";
 import { Box, TextField, Typography } from "@mui/material";
 import LogoIcon from "../public/bin2code_xl.png";
 
 export default function App() {
+    const [isDecimalDisabled, setDecimalDisabled] = useState(true);
+
     return (
         <Container maxWidth="sm">
             <Box
@@ -30,6 +33,7 @@ export default function App() {
                     variant="outlined"
                     fullWidth
                     margin="normal"
+                    disabled={isDecimalDisabled}
                 />
             </Box>
         </Container>
