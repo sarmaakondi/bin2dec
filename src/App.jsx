@@ -1,6 +1,6 @@
 import Container from "@mui/material/Container";
 import { Box, Typography } from "@mui/material";
-import LogoIcon from "../public/bin2code_sm.png";
+import LogoIcon from "../public/bin2code_md.png";
 import BinaryInput from "./BinaryInput";
 
 export default function App() {
