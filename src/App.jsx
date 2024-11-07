@@ -15,7 +15,7 @@ export default function App() {
                 <img
                     src={LogoIcon}
                     alt="logo icon"
-                    style={{ marginRight: 32 }}
+                    style={{ width: 56, marginRight: 16 }}
                 />
                 <Typography variant="h2">Bin2Dec</Typography>
             </Box>
