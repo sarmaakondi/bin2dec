@@ -1,9 +1,9 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { red } from "@mui/material/colors";
 import "@fontsource/inter";
 
 // Create a theme instance.
-const theme = createTheme({
+let theme = createTheme({
     cssVariables: true,
     palette: {
         primary: {
@@ -20,5 +20,7 @@ const theme = createTheme({
         fontFamily: '"Inter", "Roboto", sans-serif',
     },
 });
+
+theme = responsiveFontSizes(theme);
 
 export default theme;
