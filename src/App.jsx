@@ -22,7 +22,7 @@ export default function App() {
             </Box>
 
             <Box mt={4} textAlign="center">
-                <Typography variant="subtitle1">
+                <Typography variant="body1">
                     Enter 'Binary' input and click 'CONVERT' to get the decimal
                     value
                 </Typography>
