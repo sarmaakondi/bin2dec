@@ -1,6 +1,6 @@
 import Container from "@mui/material/Container";
 import { Box, Typography } from "@mui/material";
-import LogoIcon from "../public/bin2code_xl.png";
+import LogoIcon from "../public/bin2code_sm.png";
 import BinaryInput from "./BinaryInput";
 
 export default function App() {
@@ -15,7 +15,7 @@ export default function App() {
                 <img
                     src={LogoIcon}
                     alt="logo icon"
-                    style={{ width: 56, marginRight: 32 }}
+                    style={{ marginRight: 32 }}
                 />
                 <Typography variant="h2">Bin2Dec</Typography>
             </Box>
