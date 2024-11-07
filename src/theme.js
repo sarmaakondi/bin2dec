@@ -17,7 +17,7 @@ let theme = createTheme({
         },
     },
     typography: {
-        fontFamily: '"Inter", "Roboto", sans-serif',
+        fontFamily: '"Inter", sans-serif',
     },
 });
 
