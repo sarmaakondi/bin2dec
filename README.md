@@ -18,6 +18,10 @@ npm install
 npm run dev
 ```
 
+## Live App
+
+<a href="https://sarmaakondi.github.io/bin2dec/" target="_blank">Bin2Dec (opens in new tab)</a>
+
 ## Lighthouse Scores for Desktop and Mobile
 
 -   **Performance**: 100/100
