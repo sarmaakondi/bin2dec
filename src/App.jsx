@@ -15,9 +15,11 @@ export default function App() {
 
         if (/^[01]*$/.test(value)) {
             setBinaryValue(value);
+            setDecimalValue("");
             setError("");
         } else {
             setError("Only binary digits (0 or 1) are allowed.");
+            setDecimalValue("");
         }
     };
 
@@ -46,7 +48,7 @@ export default function App() {
             </Box>
 
             <Box mt={4} textAlign="center">
-                <Typography variant="p">
+                <Typography variant="body1">
                     Enter 'Binary' input and click 'CONVERT' to get the decimal
                     value
                 </Typography>
@@ -76,6 +78,7 @@ export default function App() {
                     margin="normal"
                     disabled={isDecimalDisabled}
                     value={decimalValue}
+                    aria-label="Decimal output field"
                 />
                 <Button
                     sx={{ mt: 2 }}
@@ -84,6 +87,7 @@ export default function App() {
                     color="primary"
                     fullWidth
                     onClick={handleConvert}
+                    disabled={!binaryValue || !!error}
                 >
                     Convert
                 </Button>
